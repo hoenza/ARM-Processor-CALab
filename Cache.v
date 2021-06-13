@@ -10,8 +10,8 @@ module Cache(rst, clk, addr, R_EN, W_EN, data_in, invalidate, hit, data_out);
 // decoding address
   wire[5:0] index;
   wire[9:0] tag;
-  assign index = addr[18:13];
-  assign tag = addr[12:3];  
+  assign tag = addr[18:9];
+  assign index = addr[8:3];  
 /////////////////////////////////////////////////
 // way1 blocks
   reg[31:0] way_0_data_0[0:63];
@@ -28,8 +28,8 @@ module Cache(rst, clk, addr, R_EN, W_EN, data_in, invalidate, hit, data_out);
 /////////////////////////////////////////////////
 wire[31:0] way_0_out;
 wire[31:0] way_1_out;
-assign way_0_out = addr[2] ? way_0_data_0[index] : way_0_data_1[index];
-assign way_1_out = addr[2] ? way_1_data_0[index] : way_1_data_1[index];
+assign way_0_out = addr[2] ? way_0_data_1[index] : way_0_data_0[index];
+assign way_1_out = addr[2] ? way_1_data_1[index] : way_1_data_0[index];
 
 wire way_0_hit;
 wire way_1_hit;
@@ -39,8 +39,21 @@ assign way_1_hit = (tag == tag_way_1[index]) & valid_way_1[index];
 assign hit = way_0_hit | way_1_hit;
 assign data_out = way_0_hit ? way_0_out : way_1_hit ? way_1_out : 32'b0;
 
-
-always@(posedge clk) begin
+integer i;
+always@(posedge clk, posedge rst) begin
+  if(rst) begin
+      for(i=0; i<64; i=i+1) begin
+        way_0_data_0[i] <= 32'b0;
+        way_0_data_1[i] <= 32'b0;
+        tag_way_0[i] <= 10'b0;
+        valid_way_0[i] <= 0;
+        way_1_data_0[i] <= 32'b0;
+        way_1_data_1[i] <= 32'b0;
+        tag_way_1[i] <= 10'b0;
+        valid_way_1[i] <= 0;
+        used_block[i] <= 0;
+      end
+  end
   if(W_EN) begin
     case(used_block[index])
       0: begin

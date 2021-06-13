@@ -2,15 +2,16 @@
 
 module SRAM_Controller(clk, rst, write_en, read_en, address, writeData, readData, ready, SRAM_DQ, SRAM_ADDR, SRAM_WE_N);
   input clk, rst, write_en, read_en;
-  input[31:0] address, writeData;
-  output[31:0] readData;
+  input[18:0] address;
+  input[31:0] writeData;
+  output[63:0] readData;
   output reg ready;
-  inout [31:0] SRAM_DQ;
+  inout [63:0] SRAM_DQ;
   output reg[16:0] SRAM_ADDR;
   // output SRAM_UB_N, SRAM_LB_N, SRAM_WE_N, SRAM_CE_N, SRAM_OE_N;
   output reg SRAM_WE_N;
   // assign ready = write_en | read_en;
-  reg[31:0] SRAM_DQ_TMP;
+  reg[63:0] SRAM_DQ_TMP;
   
   wire[31:0] addr;
   assign addr = (address - 11'b10000000000) >> 2;
@@ -21,7 +22,7 @@ module SRAM_Controller(clk, rst, write_en, read_en, address, writeData, readData
   integer waitStep = 0;
   parameter[2:0] idle=0, read=1, write=2, waitW=3, waitW2=4, waitR=5, waitR2=6, en=7;
 
-  assign SRAM_DQ = (ps==write | ps == waitW | ps == waitW2) ? SRAM_DQ_TMP : 32'bz;
+  assign SRAM_DQ = (ps==write | ps == waitW | ps == waitW2) ? SRAM_DQ_TMP : 64'bz;
 
   always@(*) begin
 		case(ps)
@@ -80,7 +81,7 @@ module SRAM_Controller(clk, rst, write_en, read_en, address, writeData, readData
   always@(ps, write_en, read_en) begin
     ready = 1'b0;
     SRAM_WE_N = 1'b1;
-    SRAM_ADDR = addr;
+    SRAM_ADDR = addr[16:0];
     case(ps)
       idle: begin
         if(read_en | write_en) begin
@@ -94,7 +95,7 @@ module SRAM_Controller(clk, rst, write_en, read_en, address, writeData, readData
       write: begin
         SRAM_WE_N = 1'b0;
         // SRAM_ADDR = addr;
-        SRAM_DQ_TMP = writeData;
+        SRAM_DQ_TMP[31:0] = writeData;
       end
       waitW: SRAM_WE_N = 1'b0;
       waitW2: SRAM_WE_N = 1'b0;

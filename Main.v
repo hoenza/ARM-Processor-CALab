@@ -2,7 +2,7 @@
 module Main(rst, clk, FW_EN, SRAM_DQ, SRAM_ADDR, SRAM_WE_N);
 
   input rst, clk, FW_EN;
-  inout[31:0] SRAM_DQ;
+  inout[63:0] SRAM_DQ;
   output[16:0] SRAM_ADDR;
   output SRAM_WE_N;
 
@@ -30,7 +30,7 @@ module Main(rst, clk, FW_EN, SRAM_DQ, SRAM_ADDR, SRAM_WE_N);
   wire[31:0] ALU_result_EXE_R_OUT, ST_val_EXE_OUT, ST_val_EXE_R_OUT;
   wire[3:0] Dest_EXE_R_OUT;
   
-  wire[63:0] MEM_result_MEM;
+  wire[63:0] data_SRAM_CONTROLLER_OUT;
   wire WB_EN_MEM_R_OUT, MEM_R_en_MEM_R_OUT;
   wire[31:0] ALU_result_MEM_R_OUT, Mem_read_value_MEM_R_OUT;
   wire[3:0] Dest_MEM_R_OUT;
@@ -77,15 +77,15 @@ module Main(rst, clk, FW_EN, SRAM_DQ, SRAM_ADDR, SRAM_WE_N);
   EXEStageReg exeStageReg(rst, clk, memStageFreezeSig, WB_EN_ID_R_OUT, memReadEn_ID_R_OUT, memWriteEn_ID_R_OUT, ALU_result_EXE_OUT, ST_val_EXE_OUT,
    Dest_ID_R_OUT, WB_EN_EXE_R_OUT, MEM_R_EN_EXE_R_OUT, MEM_W_EN_EXE_R_OUT, ALU_result_EXE_R_OUT, ST_val_EXE_R_OUT, Dest_EXE_R_OUT);
   
-  // DataMemory memStage(rst, clk, MEM_R_EN_EXE_R_OUT, MEM_W_EN_EXE_R_OUT, ALU_result_EXE_R_OUT, ST_val_EXE_R_OUT, MEM_result_MEM);
+  // DataMemory memStage(rst, clk, MEM_R_EN_EXE_R_OUT, MEM_W_EN_EXE_R_OUT, ALU_result_EXE_R_OUT, ST_val_EXE_R_OUT, data_SRAM_CONTROLLER_OUT);
   
   wire cache_R_EN_CC_OUT, cache_W_EN_CC_OUT, cache_invalidate_CC_OUT, hit_CACHE_OUT;
   wire ready_CC_OUT;
   wire[63:0] cache_miss_write_back_CC_OUT;
   wire [31:0] data_CACHE_OUT, data_CC_OUT;
-  wire [16:0] SRAM_ADDR_CC_OUT;
+  wire [18:0] SRAM_ADDR_CC_OUT;
   wire[31:0] SRAM_wdata_CC_OUT;
-  wire SRAM_W_EN_CC_OUT;
+  wire SRAM_W_EN_CC_OUT, SRAM_R_EN_CC_OUT;
 
 
   Cache cache(.rst(rst), .clk(clk), .addr(ALU_result_EXE_R_OUT[18:0]), .R_EN(cache_R_EN_CC_OUT), .W_EN(cache_W_EN_CC_OUT),
@@ -93,12 +93,12 @@ module Main(rst, clk, FW_EN, SRAM_DQ, SRAM_ADDR, SRAM_WE_N);
 
   CacheController cache_conteroller(.rst(rst), .clk(clk), .addr(ALU_result_EXE_R_OUT), .wdata(ST_val_EXE_R_OUT), .MEM_R_EN(MEM_R_EN_EXE_R_OUT),
   .MEM_W_EN(MEM_W_EN_EXE_R_OUT), .rdata(data_CC_OUT), .ready(ready_CC_OUT), .sram_address(SRAM_ADDR_CC_OUT),
-  .sram_wdata(SRAM_wdata_CC_OUT), .sram_write(SRAM_W_EN_CC_OUT), .sram_rdata(MEM_result_MEM), .sram_ready(SRAM_Controller_Ready),
-  .hit(hit_CACHE_OUT), .cache_rdata(data_CACHE_OUT), .cache_R_EN(cache_R_EN_CC_OUT), .cache_W_EN(cache_W_EN_CC_OUT),
+  .sram_wdata(SRAM_wdata_CC_OUT), .sram_write(SRAM_W_EN_CC_OUT), .sram_read(SRAM_R_EN_CC_OUT), .sram_rdata(data_SRAM_CONTROLLER_OUT),
+  .sram_ready(SRAM_Controller_Ready), .hit(hit_CACHE_OUT), .cache_rdata(data_CACHE_OUT), .cache_R_EN(cache_R_EN_CC_OUT), .cache_W_EN(cache_W_EN_CC_OUT),
   .cache_invalidate(cache_invalidate_CC_OUT), .cache_miss_write_back(cache_miss_write_back_CC_OUT));
 
-  SRAM_Controller memStage(.clk(clk), .rst(rst), .write_en(MEM_W_EN_EXE_R_OUT), .read_en(MEM_R_EN_EXE_R_OUT), .address(SRAM_ADDR_CC_OUT),
-                            .writeData(SRAM_wdata_CC_OUT), .readData(MEM_result_MEM), .ready(SRAM_Controller_Ready), .SRAM_DQ(SRAM_DQ), .SRAM_ADDR(SRAM_ADDR), .SRAM_WE_N(SRAM_WE_N));
+  SRAM_Controller memStage(.clk(clk), .rst(rst), .write_en(SRAM_W_EN_CC_OUT), .read_en(SRAM_R_EN_CC_OUT), .address(SRAM_ADDR_CC_OUT),
+                            .writeData(SRAM_wdata_CC_OUT), .readData(data_SRAM_CONTROLLER_OUT), .ready(SRAM_Controller_Ready), .SRAM_DQ(SRAM_DQ), .SRAM_ADDR(SRAM_ADDR), .SRAM_WE_N(SRAM_WE_N));
   // assign memStageFreezeSig = ~SRAM_Controller_Ready;
   assign memStageFreezeSig = ~ready_CC_OUT;
 
