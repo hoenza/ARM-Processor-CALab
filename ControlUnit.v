@@ -9,6 +9,7 @@ module ControlUnit(mode, opcode, S, S_UpdateSig, branch, exeCMD, memWriteEn, mem
     output reg S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN;
 
     always@(*) begin
+        {exeCMD, S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN} = 10'b0;
         case(mode)
             // Operational Commands
             2'b00: begin
@@ -23,13 +24,13 @@ module ControlUnit(mode, opcode, S, S_UpdateSig, branch, exeCMD, memWriteEn, mem
                 (opcode == 4'b1100) ? {4'b0111, S   , 1'b0, 1'b0, 1'b0, 1'b1} :
                 (opcode == 4'b0001) ? {4'b1000, S   , 1'b0, 1'b0, 1'b0, 1'b1} :
                 (opcode == 4'b1010) ? {4'b0100, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0} :
-                (opcode == 4'b1000) ? {4'b0110, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0} : 10'bz;
+                (opcode == 4'b1000) ? {4'b0110, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0} : 10'b0;
             end
             // Load & Store
             2'b01: begin
                 {exeCMD, S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN} =
                 (S == 1'b1) ? {4'b0010, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1} :
-                (S == 1'b0) ? {4'b0010, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0} : 10'bz;
+                (S == 1'b0) ? {4'b0010, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0} : 10'b0;
             end
             // Branch
             2'b10: begin
@@ -37,7 +38,7 @@ module ControlUnit(mode, opcode, S, S_UpdateSig, branch, exeCMD, memWriteEn, mem
                 {4'b0000, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0};
             end
         default
-            {exeCMD, S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN} <= 10'bz; // to zero
+            {exeCMD, S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN} = 10'b0; // to zero
         endcase
     end
 endmodule
