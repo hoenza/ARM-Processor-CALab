@@ -9,5 +9,5 @@ module MUX3to1(in1, in2, in3, sel, out);
   assign out =
     (sel==2'b00) ? in1 :
     (sel==2'b01) ? in2 :
-    (sel==2'b10) ? in3 : 0;
+    (sel==2'b10) ? in3 : 1'b0;
 endmodule
