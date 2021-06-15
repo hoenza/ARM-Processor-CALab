@@ -23,6 +23,6 @@ module MainTB();
   initial begin
     rst = 1;
     #5 rst = 0;
-    #11000 $stop;
+    #6900 $stop;
   end
 endmodule
