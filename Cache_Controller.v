@@ -40,13 +40,12 @@ always@(*) begin
 	case(ps)
 
       idle: begin
-        if(hit)
+        if(hit & MEM_R_EN)
           ns = idle;
         else if(MEM_R_EN)
           ns = Sread;
         else if(MEM_W_EN)
           ns = Swrite;
-        // ns = hit ? idle : MEM_R_EN ? Sread : MEM_W_EN ? Swrite;
       end 
 
       Swrite: begin
