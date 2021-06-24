@@ -19,7 +19,7 @@ module RotateImmShift(in, out);
   output[31:0] out;
   
   wire[63:0] tmp;
-  assign tmp = {24'b0, in[7:0], 24'b0, in[7:0]} >> (2*in[11:8]);
+  assign tmp = {24'b0, in[7:0], 24'b0, in[7:0]} >> in[11:8] >> in[11:8];
   assign out = tmp[31:0];
 endmodule
 
