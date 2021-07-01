@@ -1,0 +1,42 @@
+library verilog;
+use verilog.vl_types.all;
+entity IDStageReg is
+    port(
+        rst             : in     vl_logic;
+        clk             : in     vl_logic;
+        freeze          : in     vl_logic;
+        flush           : in     vl_logic;
+        S_UpdateSigIn   : in     vl_logic;
+        branchIn        : in     vl_logic;
+        memWriteEnIn    : in     vl_logic;
+        memReadEnIn     : in     vl_logic;
+        WB_EN_IN        : in     vl_logic;
+        exeCMDIn        : in     vl_logic_vector(3 downto 0);
+        res1In          : in     vl_logic_vector(31 downto 0);
+        res2In          : in     vl_logic_vector(31 downto 0);
+        PCIn            : in     vl_logic_vector(31 downto 0);
+        signedImm24In   : in     vl_logic_vector(23 downto 0);
+        DestIn          : in     vl_logic_vector(3 downto 0);
+        isImmidiateIn   : in     vl_logic;
+        shiftOperandIn  : in     vl_logic_vector(11 downto 0);
+        carryIn         : in     vl_logic;
+        src1In          : in     vl_logic_vector(3 downto 0);
+        src2In          : in     vl_logic_vector(3 downto 0);
+        S_UpdateSig     : out    vl_logic;
+        branch          : out    vl_logic;
+        memWriteEn      : out    vl_logic;
+        memReadEn       : out    vl_logic;
+        WB_EN           : out    vl_logic;
+        exeCMD          : out    vl_logic_vector(3 downto 0);
+        res1            : out    vl_logic_vector(31 downto 0);
+        res2            : out    vl_logic_vector(31 downto 0);
+        PC              : out    vl_logic_vector(31 downto 0);
+        signedImm24     : out    vl_logic_vector(23 downto 0);
+        Dest            : out    vl_logic_vector(3 downto 0);
+        isImmidiate     : out    vl_logic;
+        shiftOperand    : out    vl_logic_vector(11 downto 0);
+        carry           : out    vl_logic;
+        src1            : out    vl_logic_vector(3 downto 0);
+        src2            : out    vl_logic_vector(3 downto 0)
+    );
+end IDStageReg;

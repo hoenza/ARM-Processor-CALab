@@ -1,0 +1,614 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\code\ARM-Processor-CALab\Quartus\simulation\modelsim
+vAdder
+!i10b 1
+!s100 @kcMn2I^JX_;N^a5k^2Ye1
+IQTdF>amEzDkzC=?6:aCkG3
+VnD6GZhcgBGkU_P8[IQTLA1
+Z1 dC:\code\ARM-Processor-CALab\Quartus\simulation\modelsim
+Z2 w1623590841
+8C:/code/ARM-Processor-CALab/Adder.v
+FC:/code/ARM-Processor-CALab/Adder.v
+L0 2
+Z3 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1624033747.405000
+!s107 C:/code/ARM-Processor-CALab/Adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/Adder.v|
+!s101 -O0
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab -O0
+n@adder
+vALU
+IC2>jHO<JWA4fiz`e@:RI@2
+V[ESOEdKHMSmk9N;obNlhe1
+R1
+Z6 w1624025442
+8C:/code/ARM-Processor-CALab/ALU.v
+FC:/code/ARM-Processor-CALab/ALU.v
+L0 2
+R3
+r1
+31
+R4
+R5
+n@a@l@u
+!i10b 1
+!s100 Hobee:?kR@G8>]EaRQ^<X2
+!s85 0
+!s108 1624033747.345000
+!s107 C:/code/ARM-Processor-CALab/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/ALU.v|
+!s101 -O0
+vCache
+IINj=FD7T5Ug_[]^NXzMoJ3
+V2Bf7`ib?[SXPU^bjM@0l01
+R1
+w1624029459
+8C:/code/ARM-Processor-CALab/Cache.v
+FC:/code/ARM-Processor-CALab/Cache.v
+L0 2
+R3
+r1
+31
+R4
+R5
+n@cache
+!i10b 1
+!s100 9^Cd0a>7Iz=MM0JCI>WiN2
+!s85 0
+!s108 1624033747.285000
+!s107 C:/code/ARM-Processor-CALab/Cache.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/Cache.v|
+!s101 -O0
+vCacheController
+IKhP:20NIe<AY`;8I6`_Th2
+VoMQk;[WClT;0?H3l0bIjo0
+R1
+w1624029503
+8C:/code/ARM-Processor-CALab/Cache_Controller.v
+FC:/code/ARM-Processor-CALab/Cache_Controller.v
+L0 2
+R3
+r1
+31
+R4
+R5
+n@cache@controller
+!i10b 1
+!s100 =4DI7ha1]NhHE@Jf:GmIh1
+!s85 0
+!s108 1624033747.235000
+!s107 C:/code/ARM-Processor-CALab/Cache_Controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/Cache_Controller.v|
+!s101 -O0
+vConditionCheck
+IAhmMLE8Zg[<[f@71_i1=H1
+V^iLBR?3kTIIeD_?Ml_dR^2
+R1
+R2
+8C:/code/ARM-Processor-CALab/ConditionCheck.v
+FC:/code/ARM-Processor-CALab/ConditionCheck.v
+L0 3
+R3
+r1
+31
+R4
+R5
+n@condition@check
+!i10b 1
+!s100 Cc3R1@74=a8NeN3MCO<m<1
+!s85 0
+!s108 1624033747.175000
+!s107 C:/code/ARM-Processor-CALab/ConditionCheck.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/ConditionCheck.v|
+!s101 -O0
+vControlUnit
+InzGeO4k^40NBX?MI@:Rl]0
+V0TI6i;olV79_BEjMe[L3O0
+R1
+R6
+8C:/code/ARM-Processor-CALab/ControlUnit.v
+FC:/code/ARM-Processor-CALab/ControlUnit.v
+L0 3
+R3
+r1
+31
+R4
+R5
+n@control@unit
+!i10b 1
+!s100 aT;b6`CV;]dXFQVYMTcEC1
+!s85 0
+!s108 1624033747.115000
+!s107 C:/code/ARM-Processor-CALab/ControlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/ControlUnit.v|
+!s101 -O0
+vEXEStage
+IW8R8[=VcblDdc08B6I98>0
+VCm>_nZl9ib11546bh]k962
+R1
+R2
+8C:/code/ARM-Processor-CALab/EXEStage.v
+FC:/code/ARM-Processor-CALab/EXEStage.v
+L0 2
+R3
+r1
+31
+R4
+R5
+n@e@x@e@stage
+!i10b 1
+!s100 iFI<VZGU8N5z17U8kLJR42
+!s85 0
+!s108 1624033747.055000
+!s107 C:/code/ARM-Processor-CALab/EXEStage.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/EXEStage.v|
+!s101 -O0
+vEXEStageReg
+II<AV__6bj6WTaR6o?XB[V1
+VDCG7=3F44CL]F`joEiLFg3
+R1
+R2
+8C:/code/ARM-Processor-CALab/EXEStageReg.v
+FC:/code/ARM-Processor-CALab/EXEStageReg.v
+L0 2
+R3
+r1
+31
+R4
+R5
+n@e@x@e@stage@reg
+!i10b 1
+!s100 0?WA_;<9Q9DiXk_bld_A^3
+!s85 0
+!s108 1624033747.001000
+!s107 C:/code/ARM-Processor-CALab/EXEStageReg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/EXEStageReg.v|
+!s101 -O0
+vForwardingUnit
+I9VC5DEKITHPP99@i<@?o^2
+Vc_m<[[@MG[AWMf]IVDD4H2
+R1
+R2
+8C:/code/ARM-Processor-CALab/ForwardingUnit.v
+FC:/code/ARM-Processor-CALab/ForwardingUnit.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@forwarding@unit
+!i10b 1
+!s100 L<;`H39VG2NzRe[=h`07X0
+!s85 0
+!s108 1624033746.944000
+!s107 C:/code/ARM-Processor-CALab/ForwardingUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/ForwardingUnit.v|
+!s101 -O0
+vHazardDetectionUnit
+IfSf[Kh@Nl2>NoRQ1aUhIZ3
+VNgno98Z=Z1AfTYKk;Wmcl3
+R1
+R2
+8C:/code/ARM-Processor-CALab/HazardDetectionUnit.v
+FC:/code/ARM-Processor-CALab/HazardDetectionUnit.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@hazard@detection@unit
+!i10b 1
+!s100 nRU@Tk9Plk37X7ZPYOhON1
+!s85 0
+!s108 1624033746.888000
+!s107 C:/code/ARM-Processor-CALab/HazardDetectionUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/HazardDetectionUnit.v|
+!s101 -O0
+vIDStage
+IefaGh3TcP`I7WcH?kYaUR0
+VfK?:ZR1hgNJ2`;F_>9j?T3
+R1
+R2
+8C:/code/ARM-Processor-CALab/IDStage.v
+FC:/code/ARM-Processor-CALab/IDStage.v
+L0 3
+R3
+r1
+31
+R4
+R5
+n@i@d@stage
+!i10b 1
+!s100 9^HGKDzF1RL98ThcWAMB]1
+!s85 0
+!s108 1624033746.826000
+!s107 C:/code/ARM-Processor-CALab/IDStage.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/IDStage.v|
+!s101 -O0
+vIDStageReg
+IEj9izOo0OI0o`gOd3JZIo1
+V11nC8eUhMg0WT;<DOOhM=3
+R1
+R2
+8C:/code/ARM-Processor-CALab/IDStageReg.v
+FC:/code/ARM-Processor-CALab/IDStageReg.v
+L0 3
+R3
+r1
+31
+R4
+R5
+n@i@d@stage@reg
+!i10b 1
+!s100 EXTZ<2M9=bE@j?I6]^LHf2
+!s85 0
+!s108 1624033746.769000
+!s107 C:/code/ARM-Processor-CALab/IDStageReg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/IDStageReg.v|
+!s101 -O0
+vIFStage
+Ia1_XLcO9;<3VzYDCNEcWW2
+VHG<B34:?C_ZR>iL^KeW7V2
+R1
+R2
+8C:/code/ARM-Processor-CALab/IFStage.v
+FC:/code/ARM-Processor-CALab/IFStage.v
+L0 3
+R3
+r1
+31
+R4
+R5
+n@i@f@stage
+!i10b 1
+!s100 0oj94D93VmZj_Gfh]RK]81
+!s85 0
+!s108 1624033746.715000
+!s107 C:/code/ARM-Processor-CALab/IFStage.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/IFStage.v|
+!s101 -O0
+vIFStageReg
+I`7F_n>dJ1WV`PJ?i?a[[n2
+V^BhF1E12bmUZPfFS0k[Xi3
+R1
+R2
+8C:/code/ARM-Processor-CALab/IFStageReg.v
+FC:/code/ARM-Processor-CALab/IFStageReg.v
+L0 3
+R3
+r1
+31
+R4
+R5
+n@i@f@stage@reg
+!i10b 1
+!s100 85XgDGi8HbJOgQZ<TAA]c0
+!s85 0
+!s108 1624033746.659000
+!s107 C:/code/ARM-Processor-CALab/IFStageReg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/IFStageReg.v|
+!s101 -O0
+vImmediateShift
+I4jYGM=ObV=6@cI5N?M8z>1
+VB8=GEM<Kd>81ofHV0L_5Q3
+R1
+Z7 w1624028912
+Z8 8C:/code/ARM-Processor-CALab/Value2Generator.v
+Z9 FC:/code/ARM-Processor-CALab/Value2Generator.v
+L0 26
+R3
+r1
+31
+Z10 !s108 1624033745.905000
+Z11 !s107 C:/code/ARM-Processor-CALab/Value2Generator.v|
+Z12 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/Value2Generator.v|
+R4
+R5
+n@immediate@shift
+!i10b 1
+!s100 k`mQSZ6Egm<QPL7MVfW@m1
+!s85 0
+!s101 -O0
+vInstructionMemory
+I1H<o?Lzb>KEh`>S0;5?cn0
+VND]Z`;SDbEeWK8?ZHCNOM2
+R1
+w1624029366
+8C:/code/ARM-Processor-CALab/InstructionMemory.v
+FC:/code/ARM-Processor-CALab/InstructionMemory.v
+L0 2
+R3
+r1
+31
+R4
+R5
+n@instruction@memory
+!i10b 1
+!s100 3TF2aIUc[HVfgEh>3_6=:2
+!s85 0
+!s108 1624033746.554000
+!s107 C:/code/ARM-Processor-CALab/InstructionMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/InstructionMemory.v|
+!s101 -O0
+vMain
+IWg7]9=onI0ABc>PTP_:Ce0
+VaTD8C=FA@zM1;Z[iXm`B>3
+R1
+w1624031855
+8C:/code/ARM-Processor-CALab/Main.v
+FC:/code/ARM-Processor-CALab/Main.v
+L0 2
+R3
+r1
+31
+R4
+R5
+n@main
+!i10b 1
+!s100 `_ihCG9UJPQFCz><g8;`=1
+!s85 0
+!s108 1624033746.498000
+!s107 C:/code/ARM-Processor-CALab/Main.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/Main.v|
+!s101 -O0
+vMainTB
+I_n;@No]3UJmG@CeZce2di2
+VnRmZhcGFLX7SmbQX_OaMf2
+R1
+w1624032986
+8C:/code/ARM-Processor-CALab/MainTB.v
+FC:/code/ARM-Processor-CALab/MainTB.v
+L0 3
+R3
+r1
+31
+R4
+R5
+n@main@t@b
+!i10b 1
+!s100 7PzQ<gm^BCJSSdjR0oPNc2
+!s85 0
+!s108 1624033746.444000
+!s107 C:/code/ARM-Processor-CALab/MainTB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/MainTB.v|
+!s101 -O0
+vMemStageReg
+IU94co3J36oZ5i9kbUFokd3
+VQZ1X_l3U;OW[QKM53KZjA3
+R1
+R2
+8C:/code/ARM-Processor-CALab/MemStageReg.v
+FC:/code/ARM-Processor-CALab/MemStageReg.v
+L0 3
+R3
+r1
+31
+R4
+R5
+n@mem@stage@reg
+!i10b 1
+!s100 ^Fe`o8UN4Y?D[:bo001dW0
+!s85 0
+!s108 1624033746.388000
+!s107 C:/code/ARM-Processor-CALab/MemStageReg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/MemStageReg.v|
+!s101 -O0
+vMUX2to1
+IYL;o0]<T_Mh3Sz7a@XO;S1
+V4nVJnK<QRQ[4E=ioo8UzE2
+R1
+R2
+8C:/code/ARM-Processor-CALab/MUX2to1.v
+FC:/code/ARM-Processor-CALab/MUX2to1.v
+L0 3
+R3
+r1
+31
+R4
+R5
+n@m@u@x2to1
+!i10b 1
+!s100 YHS1MQJSK@db3TTYoCInz2
+!s85 0
+!s108 1624033746.332000
+!s107 C:/code/ARM-Processor-CALab/MUX2to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/MUX2to1.v|
+!s101 -O0
+vMUX3to1
+Iz27hmaCXTYBjX1WagO62E3
+VaW6^<AUH=KJjOLT<OjP;Q1
+R1
+w1624025531
+8C:/code/ARM-Processor-CALab/MUX3to1.v
+FC:/code/ARM-Processor-CALab/MUX3to1.v
+L0 3
+R3
+r1
+31
+R4
+R5
+n@m@u@x3to1
+!i10b 1
+!s100 IdH<A7Da]S:hPR;INUzI<0
+!s85 0
+!s108 1624033746.273000
+!s107 C:/code/ARM-Processor-CALab/MUX3to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/MUX3to1.v|
+!s101 -O0
+vPC
+IK6_A8bd<0:R0_nIe]^M381
+V>eoBM`88Zm?ezL`0ao6@60
+R1
+R2
+8C:/code/ARM-Processor-CALab/PC.v
+FC:/code/ARM-Processor-CALab/PC.v
+L0 2
+R3
+r1
+31
+R4
+R5
+n@p@c
+!i10b 1
+!s100 l^[HYJXe;f:Jdjgb_El<N1
+!s85 0
+!s108 1624033746.215000
+!s107 C:/code/ARM-Processor-CALab/PC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/PC.v|
+!s101 -O0
+vRegisterFile
+I>g>6Z?n?jR4j9Cj[oJifi1
+V;lmOzb4n4n2n_Sg2Ei:=H0
+R1
+R2
+8C:/code/ARM-Processor-CALab/RegisterFile.v
+FC:/code/ARM-Processor-CALab/RegisterFile.v
+L0 2
+R3
+r1
+31
+R4
+R5
+n@register@file
+!i10b 1
+!s100 ^1[HcL1iohKgT7^?hP^VC3
+!s85 0
+!s108 1624033746.158000
+!s107 C:/code/ARM-Processor-CALab/RegisterFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/RegisterFile.v|
+!s101 -O0
+vRotateImmShift
+I=`5E_oNWYj]O]XhIjL=IQ2
+VP]UCFJk4OcA72PCMW?3fF3
+R1
+R7
+R8
+R9
+L0 17
+R3
+r1
+31
+R10
+R11
+R12
+R4
+R5
+n@rotate@imm@shift
+!i10b 1
+!s100 B0_:nooAR=z21=jAbClFa1
+!s85 0
+!s101 -O0
+vSRAM
+IF?U]D?JYTkRdo7g;Y]ZAM3
+VDz><am8mGA`fHYb_VeX[J2
+R1
+w1623767643
+8C:/code/ARM-Processor-CALab/SRAM.v
+FC:/code/ARM-Processor-CALab/SRAM.v
+L0 3
+R3
+r1
+31
+R4
+R5
+n@s@r@a@m
+!i10b 1
+!s100 QS^3Kk>CFMLHZ>5QdmiVQ0
+!s85 0
+!s108 1624033746.101000
+!s107 C:/code/ARM-Processor-CALab/SRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/SRAM.v|
+!s101 -O0
+vSRAM_Controller
+I3;dGPVc3fG:m2jDH6`mH>3
+VL<m@FDmXmIIST:JBC51KS0
+R1
+w1624029574
+8C:/code/ARM-Processor-CALab/SRAM_Controller.v
+FC:/code/ARM-Processor-CALab/SRAM_Controller.v
+L0 3
+R3
+r1
+31
+R4
+R5
+n@s@r@a@m_@controller
+!i10b 1
+!s100 O3YmTIBYNTZF>JEkbHihe2
+!s85 0
+!s108 1624033746.043000
+!s107 C:/code/ARM-Processor-CALab/SRAM_Controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/SRAM_Controller.v|
+!s101 -O0
+vStatusRegister
+IGmAVo>SmU?hinF37GjNSo1
+VADfQnjKU2;]dS:=4Q][0@3
+R1
+w1624029425
+8C:/code/ARM-Processor-CALab/StatusRegister.v
+FC:/code/ARM-Processor-CALab/StatusRegister.v
+L0 2
+R3
+r1
+31
+R4
+R5
+n@status@register
+!i10b 1
+!s100 zE_WUMO0L8?E[2_U6Q<=Y1
+!s85 0
+!s108 1624033745.988000
+!s107 C:/code/ARM-Processor-CALab/StatusRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/StatusRegister.v|
+!s101 -O0
+vValue2Generator
+IFmh]]Im=ZH]dJzIIFDWbU0
+V1Ul7WzT>[I9n9d@mLTP1j1
+R1
+R7
+R8
+R9
+L0 2
+R3
+r1
+31
+R10
+R11
+R12
+R4
+R5
+n@value2@generator
+!i10b 1
+!s100 ToEH1>@3mjJ<Tze;^:3@70
+!s85 0
+!s101 -O0
+vWBStage
+I2DEBCKOSd4dF8U;DM>X=X1
+VBPLFB=:SLEU?5b26KTimG0
+R1
+R2
+8C:/code/ARM-Processor-CALab/WBStage.v
+FC:/code/ARM-Processor-CALab/WBStage.v
+L0 3
+R3
+r1
+31
+R4
+n@w@b@stage
+R5
+!i10b 1
+!s100 ?RGPbTXHB<H8?lWIVWFcO0
+!s85 0
+!s108 1624033745.844000
+!s107 C:/code/ARM-Processor-CALab/WBStage.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/ARM-Processor-CALab|C:/code/ARM-Processor-CALab/WBStage.v|
+!s101 -O0

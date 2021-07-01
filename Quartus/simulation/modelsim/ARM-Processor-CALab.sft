@@ -1,0 +1,5 @@
+set tool_name "ModelSim-Altera (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {ARM-Processor-CALab.vho ARM-Processor-CALab_vhd.sdo}}
+	{{"Fast Model"} {ARM-Processor-CALab_fast.vho ARM-Processor-CALab_vhd_fast.sdo}}
+}

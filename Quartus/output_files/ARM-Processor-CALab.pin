@@ -1,0 +1,322 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+CHIP  "ARM-Processor-CALab"  ASSIGNED TO AN: EP2C5AF256A7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A1        : gnd    :                   :         :           :                
+VCCIO2                       : A2        : power  :                   : 2.5V    : 2         :                
+SRAM_ADDR[14]                : A3        : output : 2.5 V             :         : 2         : N              
+GND*                         : A4        :        :                   :         : 2         :                
+GND*                         : A5        :        :                   :         : 2         :                
+SRAM_DQ[61]                  : A6        : bidir  : 2.5 V             :         : 2         : N              
+GND*                         : A7        :        :                   :         : 2         :                
+GND*                         : A8        :        :                   :         : 2         :                
+SRAM_DQ[3]                   : A9        : bidir  : 2.5 V             :         : 2         : N              
+GND*                         : A10       :        :                   :         : 2         :                
+SRAM_ADDR[5]                 : A11       : output : 2.5 V             :         : 2         : N              
+SRAM_DQ[10]                  : A12       : bidir  : 2.5 V             :         : 2         : N              
+GND*                         : A13       :        :                   :         : 2         :                
+GND*                         : A14       :        :                   :         : 2         :                
+VCCIO2                       : A15       : power  :                   : 2.5V    : 2         :                
+GND                          : A16       : gnd    :                   :         :           :                
+VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
+GND                          : B2        : gnd    :                   :         :           :                
+GND*                         : B3        :        :                   :         : 2         :                
+GND*                         : B4        :        :                   :         : 2         :                
+GND*                         : B5        :        :                   :         : 2         :                
+SRAM_DQ[47]                  : B6        : bidir  : 2.5 V             :         : 2         : N              
+SRAM_DQ[21]                  : B7        : bidir  : 2.5 V             :         : 2         : N              
+NC                           : B8        :        :                   :         :           :                
+GND*                         : B9        :        :                   :         : 2         :                
+GND*                         : B10       :        :                   :         : 2         :                
+GND*                         : B11       :        :                   :         : 2         :                
+SRAM_DQ[11]                  : B12       : bidir  : 2.5 V             :         : 2         : N              
+GND*                         : B13       :        :                   :         : 2         :                
+GND*                         : B14       :        :                   :         : 2         :                
+GND                          : B15       : gnd    :                   :         :           :                
+VCCIO3                       : B16       : power  :                   : 2.5V    : 3         :                
+SRAM_DQ[40]                  : C1        : bidir  : 2.5 V             :         : 1         : N              
+SRAM_DQ[46]                  : C2        : bidir  : 2.5 V             :         : 1         : N              
+~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C3        : input  : 2.5 V             :         : 1         : N              
+GND*                         : C4        :        :                   :         : 2         :                
+SRAM_DQ[44]                  : C5        : bidir  : 2.5 V             :         : 2         : N              
+SRAM_DQ[7]                   : C6        : bidir  : 2.5 V             :         : 2         : N              
+VCCIO2                       : C7        : power  :                   : 2.5V    : 2         :                
+GND                          : C8        : gnd    :                   :         :           :                
+GND                          : C9        : gnd    :                   :         :           :                
+VCCIO2                       : C10       : power  :                   : 2.5V    : 2         :                
+SRAM_DQ[0]                   : C11       : bidir  : 2.5 V             :         : 2         : N              
+GND*                         : C12       :        :                   :         : 2         :                
+GND*                         : C13       :        :                   :         : 2         :                
+GND*                         : C14       :        :                   :         : 3         :                
+NC                           : C15       :        :                   :         :           :                
+NC                           : C16       :        :                   :         :           :                
+NC                           : D1        :        :                   :         :           :                
+NC                           : D2        :        :                   :         :           :                
+SRAM_ADDR[4]                 : D3        : output : 2.5 V             :         : 1         : N              
+SRAM_DQ[51]                  : D4        : bidir  : 2.5 V             :         : 1         : N              
+GND*                         : D5        :        :                   :         : 1         :                
+SRAM_DQ[2]                   : D6        : bidir  : 2.5 V             :         : 2         : N              
+NC                           : D7        :        :                   :         :           :                
+SRAM_DQ[32]                  : D8        : bidir  : 2.5 V             :         : 2         : N              
+NC                           : D9        :        :                   :         :           :                
+SRAM_DQ[19]                  : D10       : bidir  : 2.5 V             :         : 2         : N              
+SRAM_DQ[37]                  : D11       : bidir  : 2.5 V             :         : 2         : N              
+GND_PLL2                     : D12       : gnd    :                   :         :           :                
+GND*                         : D13       :        :                   :         : 3         :                
+GND*                         : D14       :        :                   :         : 3         :                
+GND*                         : D15       :        :                   :         : 3         :                
+SRAM_DQ[18]                  : D16       : bidir  : 2.5 V             :         : 3         : N              
+SRAM_DQ[28]                  : E1        : bidir  : 2.5 V             :         : 1         : N              
+SRAM_DQ[45]                  : E2        : bidir  : 2.5 V             :         : 1         : N              
+SRAM_ADDR[0]                 : E3        : output : 2.5 V             :         : 1         : N              
+SRAM_DQ[54]                  : E4        : bidir  : 2.5 V             :         : 1         : N              
+SRAM_ADDR[13]                : E5        : output : 2.5 V             :         : 1         : N              
+SRAM_ADDR[9]                 : E6        : output : 2.5 V             :         : 2         : N              
+VCCIO2                       : E7        : power  :                   : 2.5V    : 2         :                
+GND                          : E8        : gnd    :                   :         :           :                
+GND                          : E9        : gnd    :                   :         :           :                
+VCCIO2                       : E10       : power  :                   : 2.5V    : 2         :                
+GNDA_PLL2                    : E11       : gnd    :                   :         :           :                
+VCCA_PLL2                    : E12       : power  :                   : 1.2V    :           :                
+NC                           : E13       :        :                   :         :           :                
+GND*                         : E14       :        :                   :         : 3         :                
+NC                           : E15       :        :                   :         :           :                
+GND*                         : E16       :        :                   :         : 3         :                
+DATA0                        : F1        : input  :                   :         : 1         :                
+TCK                          : F2        : input  :                   :         : 1         :                
+SRAM_DQ[62]                  : F3        : bidir  : 2.5 V             :         : 1         : N              
+~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
+NC                           : F5        :        :                   :         :           :                
+GND*                         : F6        :        :                   :         : 2         :                
+GND*                         : F7        :        :                   :         : 2         :                
+GND*                         : F8        :        :                   :         : 2         :                
+SRAM_DQ[39]                  : F9        : bidir  : 2.5 V             :         : 2         : N              
+SRAM_DQ[25]                  : F10       : bidir  : 2.5 V             :         : 2         : N              
+VCCD_PLL2                    : F11       : power  :                   : 1.2V    :           :                
+GND_PLL2                     : F12       : gnd    :                   :         :           :                
+NC                           : F13       :        :                   :         :           :                
+NC                           : F14       :        :                   :         :           :                
+SRAM_DQ[38]                  : F15       : bidir  : 2.5 V             :         : 3         : N              
+GND*                         : F16       :        :                   :         : 3         :                
+TMS                          : G1        : input  :                   :         : 1         :                
+TDO                          : G2        : output :                   :         : 1         :                
+VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
+NC                           : G4        :        :                   :         :           :                
+nCE                          : G5        :        :                   :         : 1         :                
+GND*                         : G6        :        :                   :         : 2         :                
+GND*                         : G7        :        :                   :         : 2         :                
+GND                          : G8        : gnd    :                   :         :           :                
+VCCINT                       : G9        : power  :                   : 1.2V    :           :                
+SRAM_DQ[35]                  : G10       : bidir  : 2.5 V             :         : 2         : N              
+GND*                         : G11       :        :                   :         : 2         :                
+SRAM_ADDR[16]                : G12       : output : 2.5 V             :         : 3         : N              
+GND*                         : G13       :        :                   :         : 3         :                
+VCCIO3                       : G14       : power  :                   : 2.5V    : 3         :                
+SRAM_DQ[57]                  : G15       : bidir  : 2.5 V             :         : 3         : N              
+SRAM_DQ[24]                  : G16       : bidir  : 2.5 V             :         : 3         : N              
+FW_EN                        : H1        : input  : 2.5 V             :         : 1         : N              
+clk                          : H2        : input  : 2.5 V             :         : 1         : N              
+GND                          : H3        : gnd    :                   :         :           :                
+DCLK                         : H4        :        :                   :         : 1         :                
+TDI                          : H5        : input  :                   :         : 1         :                
+NC                           : H6        :        :                   :         :           :                
+VCCINT                       : H7        : power  :                   : 1.2V    :           :                
+GND                          : H8        : gnd    :                   :         :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+VCCINT                       : H10       : power  :                   : 1.2V    :           :                
+SRAM_ADDR[2]                 : H11       : output : 2.5 V             :         : 3         : N              
+SRAM_DQ[22]                  : H12       : bidir  : 2.5 V             :         : 3         : N              
+SRAM_DQ[16]                  : H13       : bidir  : 2.5 V             :         : 3         : N              
+GND                          : H14       : gnd    :                   :         :           :                
+GND+                         : H15       :        :                   :         : 3         :                
+GND+                         : H16       :        :                   :         : 3         :                
+GND+                         : J1        :        :                   :         : 1         :                
+rst                          : J2        : input  : 2.5 V             :         : 1         : N              
+GND                          : J3        : gnd    :                   :         :           :                
+SRAM_DQ[17]                  : J4        : bidir  : 2.5 V             :         : 1         : N              
+nCONFIG                      : J5        :        :                   :         : 1         :                
+NC                           : J6        :        :                   :         :           :                
+VCCINT                       : J7        : power  :                   : 1.2V    :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+NC                           : J10       :        :                   :         :           :                
+GND*                         : J11       :        :                   :         : 3         :                
+SRAM_DQ[33]                  : J12       : bidir  : 2.5 V             :         : 3         : N              
+MSEL0                        : J13       :        :                   :         : 3         :                
+GND                          : J14       : gnd    :                   :         :           :                
+GND+                         : J15       :        :                   :         : 3         :                
+GND+                         : J16       :        :                   :         : 3         :                
+SRAM_DQ[49]                  : K1        : bidir  : 2.5 V             :         : 1         : N              
+SRAM_DQ[13]                  : K2        : bidir  : 2.5 V             :         : 1         : N              
+VCCIO1                       : K3        : power  :                   : 2.5V    : 1         :                
+SRAM_DQ[23]                  : K4        : bidir  : 2.5 V             :         : 1         : N              
+SRAM_DQ[59]                  : K5        : bidir  : 2.5 V             :         : 1         : N              
+NC                           : K6        :        :                   :         :           :                
+NC                           : K7        :        :                   :         :           :                
+NC                           : K8        :        :                   :         :           :                
+GND                          : K9        : gnd    :                   :         :           :                
+GND*                         : K10       :        :                   :         : 4         :                
+GND*                         : K11       :        :                   :         : 4         :                
+MSEL1                        : K12       :        :                   :         : 3         :                
+NC                           : K13       :        :                   :         :           :                
+VCCIO3                       : K14       : power  :                   : 2.5V    : 3         :                
+GND*                         : K15       :        :                   :         : 3         :                
+GND*                         : K16       :        :                   :         : 3         :                
+SRAM_DQ[34]                  : L1        : bidir  : 2.5 V             :         : 1         : N              
+SRAM_DQ[14]                  : L2        : bidir  : 2.5 V             :         : 1         : N              
+GND*                         : L3        :        :                   :         : 1         :                
+SRAM_DQ[27]                  : L4        : bidir  : 2.5 V             :         : 1         : N              
+GND_PLL1                     : L5        : gnd    :                   :         :           :                
+VCCD_PLL1                    : L6        : power  :                   : 1.2V    :           :                
+SRAM_WE_N                    : L7        : output : 2.5 V             :         : 4         : N              
+SRAM_DQ[52]                  : L8        : bidir  : 2.5 V             :         : 4         : N              
+SRAM_DQ[41]                  : L9        : bidir  : 2.5 V             :         : 4         : N              
+SRAM_DQ[8]                   : L10       : bidir  : 2.5 V             :         : 4         : N              
+GND*                         : L11       :        :                   :         : 4         :                
+SRAM_ADDR[7]                 : L12       : output : 2.5 V             :         : 4         : N              
+CONF_DONE                    : L13       :        :                   :         : 3         :                
+SRAM_DQ[15]                  : L14       : bidir  : 2.5 V             :         : 3         : N              
+SRAM_DQ[1]                   : L15       : bidir  : 2.5 V             :         : 3         : N              
+GND*                         : L16       :        :                   :         : 3         :                
+SRAM_DQ[26]                  : M1        : bidir  : 2.5 V             :         : 1         : N              
+SRAM_DQ[43]                  : M2        : bidir  : 2.5 V             :         : 1         : N              
+SRAM_DQ[4]                   : M3        : bidir  : 2.5 V             :         : 1         : N              
+GND*                         : M4        :        :                   :         : 1         :                
+VCCA_PLL1                    : M5        : power  :                   : 1.2V    :           :                
+GNDA_PLL1                    : M6        : gnd    :                   :         :           :                
+VCCIO4                       : M7        : power  :                   : 2.5V    : 4         :                
+GND                          : M8        : gnd    :                   :         :           :                
+GND                          : M9        : gnd    :                   :         :           :                
+VCCIO4                       : M10       : power  :                   : 2.5V    : 4         :                
+GND*                         : M11       :        :                   :         : 4         :                
+SRAM_ADDR[1]                 : M12       : output : 2.5 V             :         : 3         : N              
+nSTATUS                      : M13       :        :                   :         : 3         :                
+SRAM_DQ[36]                  : M14       : bidir  : 2.5 V             :         : 3         : N              
+SRAM_ADDR[3]                 : M15       : output : 2.5 V             :         : 3         : N              
+GND*                         : M16       :        :                   :         : 3         :                
+SRAM_DQ[6]                   : N1        : bidir  : 2.5 V             :         : 1         : N              
+GND*                         : N2        :        :                   :         : 1         :                
+NC                           : N3        :        :                   :         :           :                
+NC                           : N4        :        :                   :         :           :                
+GND_PLL1                     : N5        : gnd    :                   :         :           :                
+NC                           : N6        :        :                   :         :           :                
+NC                           : N7        :        :                   :         :           :                
+SRAM_DQ[60]                  : N8        : bidir  : 2.5 V             :         : 4         : N              
+SRAM_DQ[53]                  : N9        : bidir  : 2.5 V             :         : 4         : N              
+SRAM_DQ[56]                  : N10       : bidir  : 2.5 V             :         : 4         : N              
+SRAM_ADDR[8]                 : N11       : output : 2.5 V             :         : 4         : N              
+GND*                         : N12       :        :                   :         : 3         :                
+GND*                         : N13       :        :                   :         : 3         :                
+~LVDS41p/nCEO~               : N14       : output : 2.5 V             :         : 3         : N              
+GND*                         : N15       :        :                   :         : 3         :                
+GND*                         : N16       :        :                   :         : 3         :                
+GND*                         : P1        :        :                   :         : 1         :                
+SRAM_DQ[31]                  : P2        : bidir  : 2.5 V             :         : 1         : N              
+GND*                         : P3        :        :                   :         : 1         :                
+GND*                         : P4        :        :                   :         : 4         :                
+GND*                         : P5        :        :                   :         : 4         :                
+NC                           : P6        :        :                   :         :           :                
+VCCIO4                       : P7        : power  :                   : 2.5V    : 4         :                
+GND                          : P8        : gnd    :                   :         :           :                
+GND                          : P9        : gnd    :                   :         :           :                
+VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
+SRAM_DQ[58]                  : P11       : bidir  : 2.5 V             :         : 4         : N              
+GND*                         : P12       :        :                   :         : 4         :                
+GND*                         : P13       :        :                   :         : 4         :                
+GND*                         : P14       :        :                   :         : 3         :                
+GND*                         : P15       :        :                   :         : 3         :                
+GND*                         : P16       :        :                   :         : 3         :                
+VCCIO1                       : R1        : power  :                   : 2.5V    : 1         :                
+GND                          : R2        : gnd    :                   :         :           :                
+GND*                         : R3        :        :                   :         : 4         :                
+GND*                         : R4        :        :                   :         : 4         :                
+SRAM_DQ[12]                  : R5        : bidir  : 2.5 V             :         : 4         : N              
+NC                           : R6        :        :                   :         :           :                
+SRAM_DQ[48]                  : R7        : bidir  : 2.5 V             :         : 4         : N              
+SRAM_DQ[63]                  : R8        : bidir  : 2.5 V             :         : 4         : N              
+SRAM_DQ[42]                  : R9        : bidir  : 2.5 V             :         : 4         : N              
+SRAM_DQ[50]                  : R10       : bidir  : 2.5 V             :         : 4         : N              
+SRAM_ADDR[12]                : R11       : output : 2.5 V             :         : 4         : N              
+SRAM_ADDR[11]                : R12       : output : 2.5 V             :         : 4         : N              
+SRAM_DQ[5]                   : R13       : bidir  : 2.5 V             :         : 4         : N              
+GND*                         : R14       :        :                   :         : 4         :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCIO3                       : R16       : power  :                   : 2.5V    : 3         :                
+GND                          : T1        : gnd    :                   :         :           :                
+VCCIO4                       : T2        : power  :                   : 2.5V    : 4         :                
+GND*                         : T3        :        :                   :         : 4         :                
+SRAM_DQ[20]                  : T4        : bidir  : 2.5 V             :         : 4         : N              
+SRAM_DQ[9]                   : T5        : bidir  : 2.5 V             :         : 4         : N              
+SRAM_ADDR[10]                : T6        : output : 2.5 V             :         : 4         : N              
+SRAM_DQ[55]                  : T7        : bidir  : 2.5 V             :         : 4         : N              
+SRAM_DQ[30]                  : T8        : bidir  : 2.5 V             :         : 4         : N              
+SRAM_DQ[29]                  : T9        : bidir  : 2.5 V             :         : 4         : N              
+GND*                         : T10       :        :                   :         : 4         :                
+SRAM_ADDR[15]                : T11       : output : 2.5 V             :         : 4         : N              
+GND*                         : T12       :        :                   :         : 4         :                
+GND*                         : T13       :        :                   :         : 4         :                
+SRAM_ADDR[6]                 : T14       : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : T15       : power  :                   : 2.5V    : 4         :                
+GND                          : T16       : gnd    :                   :         :           :                

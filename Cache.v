@@ -54,7 +54,7 @@ always@(posedge clk, posedge rst) begin
         used_block[i] <= 0;
       end
   end
-  if(W_EN) begin
+  else if(W_EN) begin
     case(used_block[index])
       0: begin
         way_1_data_1[index] <= data_in[63:32];

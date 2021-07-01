@@ -1,0 +1,177 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do ARM-Processor-CALab_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/WBStage.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module WBStage
+# 
+# Top level modules:
+# 	WBStage
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/Value2Generator.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Value2Generator
+# -- Compiling module RotateImmShift
+# -- Compiling module ImmediateShift
+# 
+# Top level modules:
+# 	Value2Generator
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/StatusRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module StatusRegister
+# 
+# Top level modules:
+# 	StatusRegister
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/SRAM_Controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SRAM_Controller
+# 
+# Top level modules:
+# 	SRAM_Controller
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/SRAM.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SRAM
+# 
+# Top level modules:
+# 	SRAM
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/RegisterFile.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/PC.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/MUX3to1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX3to1
+# 
+# Top level modules:
+# 	MUX3to1
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/MUX2to1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX2to1
+# 
+# Top level modules:
+# 	MUX2to1
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/MemStageReg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MemStageReg
+# 
+# Top level modules:
+# 	MemStageReg
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/MainTB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MainTB
+# 
+# Top level modules:
+# 	MainTB
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/Main.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Main
+# 
+# Top level modules:
+# 	Main
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/InstructionMemory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module InstructionMemory
+# 
+# Top level modules:
+# 	InstructionMemory
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/IFStageReg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IFStageReg
+# 
+# Top level modules:
+# 	IFStageReg
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/IFStage.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IFStage
+# 
+# Top level modules:
+# 	IFStage
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/IDStageReg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IDStageReg
+# 
+# Top level modules:
+# 	IDStageReg
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/IDStage.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IDStage
+# 
+# Top level modules:
+# 	IDStage
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/HazardDetectionUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module HazardDetectionUnit
+# 
+# Top level modules:
+# 	HazardDetectionUnit
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/ForwardingUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ForwardingUnit
+# 
+# Top level modules:
+# 	ForwardingUnit
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/EXEStageReg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module EXEStageReg
+# 
+# Top level modules:
+# 	EXEStageReg
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/EXEStage.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module EXEStage
+# 
+# Top level modules:
+# 	EXEStage
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/ControlUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ControlUnit
+# 
+# Top level modules:
+# 	ControlUnit
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/ConditionCheck.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ConditionCheck
+# 
+# Top level modules:
+# 	ConditionCheck
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/Cache_Controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CacheController
+# 
+# Top level modules:
+# 	CacheController
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/Cache.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cache
+# 
+# Top level modules:
+# 	Cache
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+C:/code/ARM-Processor-CALab {C:/code/ARM-Processor-CALab/Adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Adder
+# 
+# Top level modules:
+# 	Adder
+# 

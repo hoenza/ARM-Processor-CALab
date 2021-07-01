@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'SRAM_Controller:memStage|ps.read'
+Slack : -6.049
+TNS   : -160.228
+
+Type  : Slow Model Setup 'clk'
+Slack : -6.003
+TNS   : -34.694
+
+Type  : Slow Model Setup 'Cache:cache|valid_way_0[0]'
+Slack : -1.378
+TNS   : -3.744
+
+Type  : Slow Model Hold 'SRAM_Controller:memStage|ps.read'
+Slack : -3.707
+TNS   : -92.458
+
+Type  : Slow Model Hold 'clk'
+Slack : -2.411
+TNS   : -5.972
+
+Type  : Slow Model Hold 'Cache:cache|valid_way_0[0]'
+Slack : -2.250
+TNS   : -2.250
+
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -1.469
+TNS   : -18.577
+
+Type  : Slow Model Minimum Pulse Width 'Cache:cache|valid_way_0[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'SRAM_Controller:memStage|ps.read'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'SRAM_Controller:memStage|ps.read'
+Slack : -1.518
+TNS   : -34.492
+
+Type  : Fast Model Setup 'clk'
+Slack : -1.490
+TNS   : -6.608
+
+Type  : Fast Model Setup 'Cache:cache|valid_way_0[0]'
+Slack : -0.335
+TNS   : -0.943
+
+Type  : Fast Model Hold 'SRAM_Controller:memStage|ps.read'
+Slack : -1.477
+TNS   : -38.904
+
+Type  : Fast Model Hold 'clk'
+Slack : -1.305
+TNS   : -3.403
+
+Type  : Fast Model Hold 'Cache:cache|valid_way_0[0]'
+Slack : -1.029
+TNS   : -1.029
+
+Type  : Fast Model Minimum Pulse Width 'clk'
+Slack : -1.222
+TNS   : -15.222
+
+Type  : Fast Model Minimum Pulse Width 'Cache:cache|valid_way_0[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'SRAM_Controller:memStage|ps.read'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------

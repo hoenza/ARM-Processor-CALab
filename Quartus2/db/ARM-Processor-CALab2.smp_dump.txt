@@ -1,0 +1,17 @@
+
+State Machine - |MainTB|Main:UUTMain|SRAM_Controller:memStage|ps
+Name ps.en ps.waitR2 ps.waitR ps.waitW2 ps.waitW ps.write ps.read ps.idle 
+ps.idle 0 0 0 0 0 0 0 0 
+ps.read 0 0 0 0 0 0 1 1 
+ps.write 0 0 0 0 0 1 0 1 
+ps.waitW 0 0 0 0 1 0 0 1 
+ps.waitW2 0 0 0 1 0 0 0 1 
+ps.waitR 0 0 1 0 0 0 0 1 
+ps.waitR2 0 1 0 0 0 0 0 1 
+ps.en 1 0 0 0 0 0 0 1 
+
+State Machine - |MainTB|Main:UUTMain|CacheController:cache_conteroller|ps
+Name ps.idle ps.Swrite ps.Sread 
+ps.idle 0 0 0 
+ps.Sread 1 0 1 
+ps.Swrite 1 1 0 

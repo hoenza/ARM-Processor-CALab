@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Jul 01 10:37:28 2021
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : ARM-Processor-CALab
+Top-level Entity Name : Main
+Family : Cyclone II
+Device : EP2C5AF256A7
+Timing Models : Final
+Total logic elements : 132 / 4,608 ( 3 % )
+    Total combinational functions : 131 / 4,608 ( 3 % )
+    Dedicated logic registers : 14 / 4,608 ( < 1 % )
+Total registers : 14
+Total pins : 85 / 158 ( 54 % )
+Total virtual pins : 0
+Total memory bits : 0 / 119,808 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 26 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

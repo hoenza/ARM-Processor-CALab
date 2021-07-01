@@ -110,7 +110,6 @@ module SRAM_Controller(clk, rst, write_en, read_en, address, writeData, readData
   always@(posedge clk, posedge rst) begin
     if(rst) begin
       ps <= idle;
-      ns <= idle;
     end
     else begin
       ps <= ns;

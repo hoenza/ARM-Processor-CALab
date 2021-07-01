@@ -4,10 +4,9 @@ module StatusRegister(rst, clk, S, Status_bits, out);
   input[3:0] Status_bits;
   output reg[3:0] out;
   
-  always@(posedge rst)
-    out <= 4'b0;
-  always@(negedge clk) begin
-    if(S)
+  always@(negedge clk, posedge rst) begin
+    if(rst) out <= 4'b0;
+    else if(S)
       out <= Status_bits;
   end
 endmodule

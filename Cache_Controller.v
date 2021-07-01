@@ -38,7 +38,6 @@ parameter[1:0] idle=0, Sread=1, Swrite=2;
 
 always@(*) begin
 	case(ps)
-
       idle: begin
         if(hit)
           ns = idle;
@@ -88,7 +87,6 @@ end
 always@(posedge clk, posedge rst) begin
     if(rst) begin
         ps <= idle;
-        ns <= idle;
     end
     else begin
     ps <= ns;
